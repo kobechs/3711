@@ -1,0 +1,27 @@
+body {
+	text-align: center;	
+    background-color: rgba(54, 231, 157, 0.527)
+	
+    ;
+}
+h1 {
+	color: #29608d;
+    text-shadow: 3px 4px #a0ea63; 
+}
+#question {
+	width: 100%;
+	margin: 30px 0;
+	font-size: 40px;
+}
+#answerForm {
+	font-size: 60px;
+}
+#answer {
+	width: 40%;
+}
+#andForm {
+	font-size: 30px;
+}
+.success-background {
+	background-image: url(https://i.pinimg.com/736x/53/f3/ee/53f3ee01b5165a2abdd4c6d8d9123119.jpg);
+}

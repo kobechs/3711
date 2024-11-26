@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <style> 
+        .word-list {
+            font-size: 500px; 
+            font-weight: bold; 
+        }
+        /* ここで背景画像を定義します（初期状態は透明に） */
+        body.success-background {
+            background-image: url('https://www.sozailab.jp/db_img/sozai/104029/18afda8724e643f01b3f026efac90a3f.jpg'); /* 背景画像のURL */
+            background-size: cover;
+        }
+        body.nomal-background {
+            background-image: url('data:image/png;base64,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'); /* 背景画像のURL */
+            background-size: cover;
+        }
+        body.silver-background {
+            background-image: url('https://img.freepik.com/free-photo/white-silver-glittery-pattern-background_53876-160522.jpg'); /* 背景画像のURL */
+            background-size: cover;
+        }
+    </style>
+    <script src="components/loader.js"></script><script src="classic.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("answer").addEventListener("keydown", function(event) {
+                if (event.key === "Enter") {
+                    judge();
+                }
+            });
+        });
+
+        var kei = 0;
+        var ata = 0;
+        var atr = 0;
+        // 問題番号
+        let no = 0;
+        // 正解数
+        let score = 0;
+        // ITパスポート単語リスト
+        let wordList = [
+            { japanese: "Webサイトで効率の良い情報集や情報発信を行うために用いる文書フォーマット", english: "RSS" },
+            { japanese: "重要業績評価指数", english: "KPI" },
+            { japanese: "検索エンジン最適化 - 検索エンジンのランキングで上位表示を行うこと", english: "SEO" },
+            { japanese: "ユーザーとの対話やコラボレーションを強化するシステム", english: "SOE" },
+            { japanese: "概念実証 - 新しい概念や理論", english: "Poc" },
+            { japanese: "自己資本利益率", english: "ROE" },
+            { japanese: "オン・ザ・ジョブ・トレーニング", english: "OJT" },
+            { japanese: "企業の社会的責任", english: "CSR" },
+            { japanese: "人事労務管理", english: "HRM" },
+            { japanese: "事業継続マネジメント", english: "BCM" },
+            { japanese: "最高情報責任者", english: "CIO" },
+            { japanese: "最高経営責任者", english: "CEO" },
+            { japanese: "日本産業規格", english: "JIS" }
+        ];
+
+        // ランダムに10問選ぶためにシャッフルする関数
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // 問題リストをランダムにシャッフルして10問選ぶ
+        let randomQuestions = shuffle([...wordList]).slice(0, 10);
+
+        // 問題を表示する
+        function showQuestion() {
+            if (no < randomQuestions.length) {
+                // 次の問題がある場合は、表示する
+                document.getElementById("question").innerHTML = randomQuestions[no].japanese;               
+            } else {
+                // 全問終了したら、成績を発表する
+                document.getElementById("question").innerHTML = score + "/" + randomQuestions.length;
+                document.getElementById("answerForm").style.display = "none";
+                document.getElementById("resetBtn").style.display = "block"; // リセットボタンを表示する
+
+                if (score == randomQuestions.length) {
+                    // 全問正解の場合
+                    document.getElementById("resultMessage").innerHTML = "全問正解！天才か！？";
+                    document.getElementById("resultImage").src = "gold.png";
+                    document.body.classList.add("success-background"); // 背景を変更
+                } else if (score >= randomQuestions.length * 0.6) {
+                    // 6割以上正解の場合
+                    document.getElementById("resultMessage").innerHTML = "合格！おめでとう！";
+                    document.getElementById("resultImage").src = "silver.png";
+                    document.body.classList.add("silver-background"); // 背景を変更
+                } else {
+                    // 6割未満の場合
+                    document.getElementById("resultMessage").innerHTML = "もう少しがんばりましょう。";
+                    document.getElementById("resultImage").src = "bronze.png";
+                    document.body.classList.add("nomal-background"); // 背景を変更
+                }
+            }
+
+            // 正解率を四捨五入して表示
+            let accuracy = (ata / kei) * 100;
+            let roundedAccuracy = Math.round(accuracy);  // 四捨五入
+            document.getElementById("atr").innerHTML = "正解率: " + roundedAccuracy + "％";
+
+            // その他の進捗表示
+            document.getElementById("answer").value = "";
+            document.getElementById("cnt").innerHTML = ata + "回正解 / " + kei + "回中";
+        }
+        
+        // 入力された回答の正誤判定を行う
+        function judge() {
+            let answer = document.getElementById("answer").value;
+            if (answer == randomQuestions[no].english) {
+                alert("正解です！");
+                score++;
+                ata++;
+                kei++;
+            } else {
+                alert("残念！不正解です。答えは「" + randomQuestions[no].english + "」です。");
+                kei++;
+            }
+            
+            // 次の問題を表示
+            no++;
+            showQuestion();
+        }
+
+        // リセット関数
+        function resetQuiz() {
+            // 状態をリセット
+            no = 0;
+            score = 0;
+            kei = 0;
+            ata = 0;
+            randomQuestions = shuffle([...wordList]).slice(0, 10); // 新しくランダムに10問を選択
+            document.getElementById("answerForm").style.display = "block";
+            document.getElementById("resetBtn").style.display = "none";
+            document.getElementById("resultMessage").innerHTML = "";
+            document.getElementById("resultImage").src = "";
+            document.getElementById("cnt").innerHTML = "";
+            document.getElementById("atr").innerHTML = "";
+            document.body.classList.remove("success-background"); 
+            document.body.classList.remove("nomal-background");
+            document.body.classList.remove("silver-background");// 背景画像をリセット
+            showQuestion(); // 最初の問題を表示
+        }
+    </script>
+</head>
+<body onload="showQuestion()">
+    <h1 id="title">ITパスポート3文字略語</h1>
+    <div id="question"></div>
+    <div id="answerForm">
+        <select id="answer">
+            <option value="KPI">KPI</option>
+            <option valSue="OJT">OJT</option>
+            <option value="SEO">SEO</option>
+            <option value="BCM">BCM</option>
+            <option value="RSS">RSS</option>
+            <option value="CEO">CEO</option>
+            <option value="Poc">Poc</option>
+            <option value="CIO">CIO</option>
+            <option value="HRM">HRM</option>
+            <option value="SOE">SOE</option>
+            <option value="ROE">ROE</option>
+            <option value="CSR">CSR</option>
+            <option value="JIS">JIS</option>
+            <option value=""></option>
+        </select>
+        <button onclick="judge()">OK</button>
+    </div>
+    <button id="resetBtn" style="display:none;" onclick="resetQuiz()">リセット</button> <!-- リセットボタン -->
+    <p id="resultMessage"></p>
+    <img id="resultImage" src="">
+    <h2 id="cnt"></h2>
+    <h2 id="atr"></h2>
+    <h2><p>問題数: 10問</p></h2>
+    <div id="andForm">
+        <div>語群</div>
+        <div> OJT SEO BCM RSS CEO KPI Poc CIO HRM SOE ROE CSR JIS</div>
+    </div>   
+</body>
+</html>
+
